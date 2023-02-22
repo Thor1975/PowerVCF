@@ -1,0 +1,122 @@
+{
+    "domainName": "sa-wld01",
+    "vcenterSpec": {
+      "name": "sa-wld01-vc01",
+      "networkDetailsSpec": {
+        "ipAddress": "172.20.10.41",
+        "dnsName": "sa-wld01-vc01.vcf.sddc.local",
+        "gateway": "172.20.10.254",
+        "subnetMask": "255.255.255.0"
+      },
+      "rootPassword": "VMware123!",
+      "datacenterName": "sa-wld01-dc01"
+    },
+    "computeSpec": {
+      "clusterSpecs": [
+        {
+          "name": "sa-wld01-cl01",
+          "hostSpecs": [
+            {
+              "id": "486ca35f-e419-4d8b-b64c-1e33463e1802",
+              "licenseKey": "T4435-NEH91-N8AN9-081U0-8WNLH",
+              "hostNetworkSpec": {
+                "vmNics": [
+                  {
+                    "id": "vmnic0",
+                    "vdsName": "sa-wld01-cl01-vds01"
+                  },
+                  {
+                    "id": "vmnic1",
+                    "vdsName": "sa-wld01-cl01-vds01"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "57bd16a4-270d-478a-9822-317b2e297bae",
+              "licenseKey": "T4435-NEH91-N8AN9-081U0-8WNLH",
+              "hostNetworkSpec": {
+                "vmNics": [
+                  {
+                    "id": "vmnic0",
+                    "vdsName": "sa-wld01-cl01-vds01"
+                  },
+                  {
+                    "id": "vmnic1",
+                    "vdsName": "sa-wld01-cl01-vds01"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "58ba96ae-d1b2-47d3-940c-3d8c6d4f1447",
+              "licenseKey": "T4435-NEH91-N8AN9-081U0-8WNLH",
+              "hostNetworkSpec": {
+                "vmNics": [
+                  {
+                    "id": "vmnic0",
+                    "vdsName": "sa-wld01-cl01-vds01"
+                  },
+                  {
+                    "id": "vmnic1",
+                    "vdsName": "sa-wld01-cl01-vds01"
+                  }
+                ]
+              }
+            }
+          ],
+          "datastoreSpec": {
+            "vsanDatastoreSpec": {
+              "failuresToTolerate": 1,
+              "licenseKey": "RH0C7-JD081-N8AN9-0LAA6-1053H",
+              "datastoreName": "sa-wld01-cl01-ds-vsan01"
+            }
+          },
+          "networkSpec": {
+            "vdsSpecs": [
+              {
+                "name": "sa-wld01-cl01-vds01",
+                "portGroupSpecs": [
+                  {
+                    "name": "sa-wld01-cl01-vds01-mgmt",
+                    "transportType": "MANAGEMENT"
+                  },
+                  {
+                    "name": "sa-wld01-cl01-vds01-vsan",
+                    "transportType": "VSAN"
+                  },
+                  {
+                    "name": "sa-wld01-cl01-vds01-vMotion",
+                    "transportType": "VMOTION"
+                  }
+                ]
+              }
+            ],
+            "nsxClusterSpec": {
+              "nsxTClusterSpec": {
+                "geneveVlanId": 2011
+              }
+            }
+          }
+        }
+      ]
+    },
+    "nsxTSpec": {
+      "nsxManagerSpecs": [
+        {
+          "name": "sa-wld01-nsxt01",
+          "networkDetailsSpec": {
+            "ipAddress": "172.20.10.61",
+            "dnsName": "sa-wld01-nsxt01.vcf.sddc.local",
+            "gateway": "172.20.10.254",
+            "subnetMask": "255.255.255.0"
+          }
+        }
+      ],
+      "vip": "172.20.10.60",
+      "vipFqdn": "sa-wld01-nsxt-vip.vcf.sddc.local",
+      "licenseKey": "H46A4-DN306-F8VDE-0F18K-01Y04",
+      "nsxManagerAdminPassword": "VMware123!VMware123!",
+      "formFactor": "small"
+    }
+  }
