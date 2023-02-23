@@ -18,7 +18,7 @@
               "hostSpecs": [
                 {
                   "id": "486ca35f-e419-4d8b-b64c-1e33463e1802",
-                  "licenseKey": "T4435-NEH91-N8AN9-081U0-8WNLH",
+                  "licenseKey": "",
                   "hostNetworkSpec": {
                     "vmNics": [
                       {
@@ -34,7 +34,7 @@
                 },
                 {
                   "id": "57bd16a4-270d-478a-9822-317b2e297bae",
-                  "licenseKey": "T4435-NEH91-N8AN9-081U0-8WNLH",
+                  "licenseKey": "",
                   "hostNetworkSpec": {
                     "vmNics": [
                       {
@@ -50,7 +50,7 @@
                 },
                 {
                   "id": "58ba96ae-d1b2-47d3-940c-3d8c6d4f1447",
-                  "licenseKey": "T4435-NEH91-N8AN9-081U0-8WNLH",
+                  "licenseKey": "",
                   "hostNetworkSpec": {
                     "vmNics": [
                       {
@@ -68,7 +68,7 @@
               "datastoreSpec": {
                 "vsanDatastoreSpec": {
                   "failuresToTolerate": 1,
-                  "licenseKey": "RH0C7-JD081-N8AN9-0LAA6-1053H",
+                  "licenseKey": "",
                   "datastoreName": "sa-wld01-cl01-ds-vsan01"
                 }
               },
@@ -133,7 +133,7 @@
           ],
           "vip": "172.20.10.60",
           "vipFqdn": "sa-wld01-nsxt-vip.vcf.sddc.local",
-          "licenseKey": "H46A4-DN306-F8VDE-0F18K-01Y04",
+          "licenseKey": "",
           "nsxManagerAdminPassword": "VMware123!VMware123!"
         }
       }
